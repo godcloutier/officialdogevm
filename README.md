@@ -1,7 +1,7 @@
 # Smart contracts for doge 
 
 - Lead dev: @helladdict69 (twitter) Github: godcloutier 
-- Main core dev: @dogeconomy (twitter)
+- Main dev: @dogeconomy (twitter)
 
 - Language: GoLang 1.16.4 (latest)
 
