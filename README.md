@@ -1,6 +1,11 @@
 # Smart contracts for doge 
 
-- Lead dev: @helladdict69 (twitter) Github: godcloutier 
+- Lead devs: 
+    Nicolas Cloutier (@helladdict69 (twitter) Github: godcloutier), 
+    
+    Finn (Github: fmhc)
+    
+
 - Main dev: @dogeconomy (twitter)
 
 - Language: GoLang 1.16.4 (latest), Rust (networking layer)
