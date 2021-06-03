@@ -63,7 +63,7 @@ If you would like to help the developers on this project by tipping them collect
 
 All doges received to this wallet will be distributed equally between the contributors of this project and will serve as a motivational purpose, and allow them to put more time on the projects as they can free themselves of their usual daily duties.
 
-For more information, contact Nicolas Cloutier by telegram (nickwize) or twitter (@helladdict69)
+For more information, contact Nicolas Cloutier twitter (@helladdict69)
 
 
 
