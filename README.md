@@ -40,7 +40,7 @@ Code need to be always safe and tested for security flaws.
 
 ## TO BE DEVELOPED IN THIS VERSION
 
-- Communication Proxy with the chain (a la rosetta api? protocol buffers? something better?)
+- Communication Proxy with the chain (rust)
 - DOGITY : The language to code the contracts
 - An ipfs connector to decentralize assets (contract descriptions, file types, etc) @Dogeconomy idea
 - A secure way to anonymize transactions at high level (leaving low level code untouch) with key exchange to secure possible sensitive content (use case: medical field per example)
@@ -48,10 +48,12 @@ Code need to be always safe and tested for security flaws.
 ..... ADD MORE FEATURES HERE .....
 
 
-CREDITS
+## CREDITS
 
 Rosetta API Devs for idea about communication layer and blockchain sync https://github.com/rosetta-dogecoin/rosetta-dogecoin
+
 https://github.com/rllola for https://github.com/rllola/dogecoin-miner-rust
+
 ... more to come
 
 
