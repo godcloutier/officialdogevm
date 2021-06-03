@@ -54,3 +54,16 @@ Rosetta API Devs for idea about communication layer and blockchain sync https://
 https://github.com/rllola for https://github.com/rllola/dogecoin-miner-rust
 ... more to come
 
+
+
+## CONTRIBUTIONS
+
+If you would like to help the developers on this project by tipping them collectively you can send doges to the following wallet:
+### DTdbhgEE1drrigu7BTWrdh5dJErhod5bFc
+
+All doges received to this wallet will be distributed equally between the contributors of this project and will serve as a motivational purpose, and allow them to put more time on the projects as they can free themselves of their usual daily duties.
+
+For more information, contact Nicolas Cloutier by telegram (nickwize) or twitter (@helladdict69)
+
+
+
