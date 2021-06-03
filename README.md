@@ -46,3 +46,11 @@ Code need to be always safe and tested for security flaws.
 - A secure way to anonymize transactions at high level (leaving low level code untouch) with key exchange to secure possible sensitive content (use case: medical field per example)
 
 ..... ADD MORE FEATURES HERE .....
+
+
+CREDITS
+
+Rosetta API Devs for idea about communication layer and blockchain sync https://github.com/rosetta-dogecoin/rosetta-dogecoin
+https://github.com/rllola for https://github.com/rllola/dogecoin-miner-rust
+... more to come
+
