@@ -3,7 +3,7 @@
 - Lead dev: @helladdict69 (twitter) Github: godcloutier 
 - Main dev: @dogeconomy (twitter)
 
-- Language: GoLang 1.16.4 (latest)
+- Language: GoLang 1.16.4 (latest), Rust (networking layer)
 
 ## Goal: 
 
