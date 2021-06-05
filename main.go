@@ -15,7 +15,7 @@ limitations under the License.
 */
 package main
 
-import "github.com/godcloutier/officialdogevm/dogity/cmd"
+import "github.com/godcloutier/officialdogevm"
 
 func main() {
 	cmd.Execute()
