@@ -42,3 +42,33 @@ func (b *BlockJSON) UnmarshalJSON(data []byte) error {
 
 	return nil
 }
+
+type Block BlockJSON
+
+func (b Block) Metadata() (map[string]interface{}, error) {
+	m := &BlockMetadata{
+		Nonce:      b.Nonce,
+		MerkleRoot: b.MerkleRoot,
+		Version:    b.Version,
+		Size:       b.Size,
+		Weight:     b.Weight,
+		MedianTime: b.MedianTime,
+		Bits:       b.Bits,
+		Difficulty: b.Difficulty,
+	}
+
+	return types.MarshalMap(m)
+}
+
+// BlockMetadata is a collection of useful
+// metadata in a block.
+type BlockMetadata struct {
+	Nonce      int64   `json:"nonce,omitempty"`
+	MerkleRoot string  `json:"merkleroot,omitempty"`
+	Version    int32   `json:"version,omitempty"`
+	Size       int64   `json:"size,omitempty"`
+	Weight     int64   `json:"weight,omitempty"`
+	MedianTime int64   `json:"mediantime,omitempty"`
+	Bits       string  `json:"bits,omitempty"`
+	Difficulty float64 `json:"difficulty,omitempty"`
+}
