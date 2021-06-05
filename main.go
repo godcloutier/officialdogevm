@@ -15,8 +15,8 @@ limitations under the License.
 */
 package main
 
-import "github.com/godcloutier/officialdogevm/cmd"
-import "github.com/godcloutier/officialdogevm/internals/cryptoutil"
+import "cmd"
+
 
 func main() {
 	cryptoutil.Keccak256([]byte("hello world"))
