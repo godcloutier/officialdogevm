@@ -35,6 +35,9 @@ import (
 	"github.com/btcsuite/btcutil"
 )
 
+
+
+
 // catCmd represents the config command
 var catCmd = &cobra.Command{
 	Use:   "cat",
@@ -71,6 +74,21 @@ type Transaction struct {
 	SignedTx           string `json:"signedtx"`
 }
 
+
+// type Transaction struct {
+// 	Hex      string `json:"hex"`
+// 	Hash     string `json:"txid"`
+// 	Size     int64  `json:"size"`
+// 	Vsize    int64  `json:"vsize"`
+// 	Version  int32  `json:"version"`
+// 	Locktime int64  `json:"locktime"`
+// 	Weight   int64  `json:"weight"`
+
+// 	Inputs  []*Input  `json:"vin"`
+// 	Outputs []*Output `json:"vout"`
+// }
+
+// U+1F63A (128570)	😺	Lachendes Katzengesicht
 
 func CreateTransaction(secret string, destination string, amount int64, txHash string) (Transaction, error) {
 	var transaction Transaction

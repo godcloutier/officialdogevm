@@ -22,18 +22,22 @@ package cmd
 
 import (
 	"fmt"
-	"bytes"
-	"encoding/hex"
+	// "bytes"
+	// "encoding/hex"
 	
 	"github.com/spf13/cobra"
 //	"github.com/btcsuite/btcd/chaincfg"
 	//"github.com/rosetta-dogecoin/rosetta-dogecoin/bitcoin"
+
 	"github.com/rosetta-dogecoin/rosetta-dogecoin/configuration"
+	"github.com/rosetta-dogecoin/rosetta-dogecoin/dogecoin"
 	"github.com/btcsuite/btcd/rpcclient"
-	"github.com/btcsuite/btcd/txscript"	
-	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/btcsuite/btcd/wire"
-	"github.com/btcsuite/btcutil"
+	// "github.com/btcsuite/btcd/txscript"	
+	// "github.com/btcsuite/btcd/chaincfg/chainhash"
+	// "github.com/btcsuite/btcd/wire"
+	// "github.com/btcsuite/btcutil"
+
+	"github.com/coinbase/rosetta-sdk-go/types"
 	//"github.com/rosetta-dogecoin/rosetta-dogecoin/dogecoin/chaincfg"
 	"log"
 )
@@ -74,7 +78,7 @@ var txtestBuildCmd = &cobra.Command{
 	Run: func(cmd *cobra.Command, args []string) {
 
 	fmt.Println("[txtest build] called")
-	balanceTest();
+	buildTest();
 		
 	},
 }
@@ -85,7 +89,7 @@ func buildTest() {
 	client, err := rpcclient.New(&rpcclient.ConnConfig{
 		HTTPPostMode: true,
 		DisableTLS:   true,
-		Host:         "127.0.0.1:22555",
+		Host:         "127.0.0.1:22556",
 		User:         "smartdoge",
 		Pass:         "verySmartMuchWow!",
 	}, nil)
@@ -94,9 +98,10 @@ func buildTest() {
 	}
 
 
-	fmt.Println(chaincfg)
+	// fmt.Println(chaincfg)
 
 
+	
 	// list accounts
 	accounts, err := client.ListAccounts()
 	if err != nil {
@@ -110,6 +115,10 @@ func buildTest() {
 		log.Printf("%s: %s", label, amount)
 	}
 
+	MyTransaction, err := CreateTx("secret string", "destination address", 1, "txHash");
+	fmt.Println(MyTransaction)
+	fmt.Println(err)
+
 }
 
 
@@ -122,59 +131,75 @@ type MyTransaction struct {
 	SignedTx           string `json:"signedtx"`
 }
 
-
 func CreateTx(secret string, destination string, amount int64, txHash string) (MyTransaction, error) {
+
+	networkIdentifier := &types.NetworkIdentifier{
+		Network:    dogecoin.MainnetNetwork,
+		Blockchain: dogecoin.Blockchain,
+	}
+	cfg := &configuration.Configuration{
+		Mode:     configuration.Online,
+		Network:  networkIdentifier,
+		Params:   dogecoin.MainnetParams,
+		Currency: dogecoin.MainnetCurrency,
+	}
+
 	var transaction MyTransaction
-	wif, err := btcutil.DecodeWIF(secret)
-	if err != nil {
-		return MyTransaction{}, err
-	}
-	fmt.Println(&chaincfg)
-	addresspubkey, _ := btcutil.NewAddressPubKey(wif.PrivKey.PubKey().SerializeUncompressed(), &chaincfg.MainNetParams)
-	sourceTx := wire.NewMsgTx(wire.TxVersion)
-	sourceUtxoHash, _ := chainhash.NewHashFromStr(txHash)
-	sourceUtxo := wire.NewOutPoint(sourceUtxoHash, 0)
-	sourceTxIn := wire.NewTxIn(sourceUtxo, nil, nil)
-	destinationAddress, err := btcutil.DecodeAddress(destination, &chaincfg.MainNetParams)
-	sourceAddress, err := btcutil.DecodeAddress(addresspubkey.EncodeAddress(), &chaincfg.MainNetParams)
-	if err != nil {
-		return MyTransaction{}, err
-	}
-	destinationPkScript, _ := txscript.PayToAddrScript(destinationAddress)
-	sourcePkScript, _ := txscript.PayToAddrScript(sourceAddress)
-	sourceTxOut := wire.NewTxOut(amount, sourcePkScript)
-	sourceTx.AddTxIn(sourceTxIn)
-	sourceTx.AddTxOut(sourceTxOut)
-	sourceTxHash := sourceTx.TxHash()
-	redeemTx := wire.NewMsgTx(wire.TxVersion)
-	prevOut := wire.NewOutPoint(&sourceTxHash, 0)
-	redeemTxIn := wire.NewTxIn(prevOut, nil, nil)
-	redeemTx.AddTxIn(redeemTxIn)
-	redeemTxOut := wire.NewTxOut(amount, destinationPkScript)
-	redeemTx.AddTxOut(redeemTxOut)
-	sigScript, err := txscript.SignatureScript(redeemTx, 0, sourceTx.TxOut[0].PkScript, txscript.SigHashAll, wif.PrivKey, false)
-	if err != nil {
-		return MyTransaction{}, err
-	}
-	redeemTx.TxIn[0].SignatureScript = sigScript
-	flags := txscript.StandardVerifyFlags
-	vm, err := txscript.NewEngine(sourceTx.TxOut[0].PkScript, redeemTx, 0, flags, nil, nil, amount)
-	if err != nil {
-		return MyTransaction{}, err
-	}
-	if err := vm.Execute(); err != nil {
-		return MyTransaction{}, err
-	}
-	var unsignedTx bytes.Buffer
-	var signedTx bytes.Buffer
-	sourceTx.Serialize(&unsignedTx)
-	redeemTx.Serialize(&signedTx)
-	transaction.TxId = sourceTxHash.String()
-	transaction.UnsignedTx = hex.EncodeToString(unsignedTx.Bytes())
-	transaction.Amount = amount
-	transaction.SignedTx = hex.EncodeToString(signedTx.Bytes())
-	transaction.SourceAddress = sourceAddress.EncodeAddress()
-	transaction.DestinationAddress = destinationAddress.EncodeAddress()
+	// wif, err := btcutil.DecodeWIF(secret)
+	// if err != nil {
+	// 	return MyTransaction{}, err
+	// }
+	
+
+	// chaincfg := configuration.LoadConfiguration()
+
+	fmt.Println(cfg)
+
+	// addresspubkey, _ := btcutil.NewAddressPubKey(wif.PrivKey.PubKey().SerializeUncompressed(), &chaincfg.MainNetParams)
+	// sourceTx := wire.NewMsgTx(wire.TxVersion)
+	// sourceUtxoHash, _ := chainhash.NewHashFromStr(txHash)
+	// sourceUtxo := wire.NewOutPoint(sourceUtxoHash, 0)
+	// sourceTxIn := wire.NewTxIn(sourceUtxo, nil, nil)
+	// destinationAddress, err := btcutil.DecodeAddress(destination, &chaincfg.MainNetParams)
+	// sourceAddress, err := btcutil.DecodeAddress(addresspubkey.EncodeAddress(), &chaincfg.MainNetParams)
+	// if err != nil {
+	// 	return MyTransaction{}, err
+	// }
+	// destinationPkScript, _ := txscript.PayToAddrScript(destinationAddress)
+	// sourcePkScript, _ := txscript.PayToAddrScript(sourceAddress)
+	// sourceTxOut := wire.NewTxOut(amount, sourcePkScript)
+	// sourceTx.AddTxIn(sourceTxIn)
+	// sourceTx.AddTxOut(sourceTxOut)
+	// sourceTxHash := sourceTx.TxHash()
+	// redeemTx := wire.NewMsgTx(wire.TxVersion)
+	// prevOut := wire.NewOutPoint(&sourceTxHash, 0)
+	// redeemTxIn := wire.NewTxIn(prevOut, nil, nil)
+	// redeemTx.AddTxIn(redeemTxIn)
+	// redeemTxOut := wire.NewTxOut(amount, destinationPkScript)
+	// redeemTx.AddTxOut(redeemTxOut)
+	// sigScript, err := txscript.SignatureScript(redeemTx, 0, sourceTx.TxOut[0].PkScript, txscript.SigHashAll, wif.PrivKey, false)
+	// if err != nil {
+	// 	return MyTransaction{}, err
+	// }
+	// redeemTx.TxIn[0].SignatureScript = sigScript
+	// flags := txscript.StandardVerifyFlags
+	// vm, err := txscript.NewEngine(sourceTx.TxOut[0].PkScript, redeemTx, 0, flags, nil, nil, amount)
+	// if err != nil {
+	// 	return MyTransaction{}, err
+	// }
+	// if err := vm.Execute(); err != nil {
+	// 	return MyTransaction{}, err
+	// }
+	// var unsignedTx bytes.Buffer
+	// var signedTx bytes.Buffer
+	// sourceTx.Serialize(&unsignedTx)
+	// redeemTx.Serialize(&signedTx)
+	// transaction.TxId = sourceTxHash.String()
+	// transaction.UnsignedTx = hex.EncodeToString(unsignedTx.Bytes())
+	// transaction.Amount = amount
+	// transaction.SignedTx = hex.EncodeToString(signedTx.Bytes())
+	// transaction.SourceAddress = sourceAddress.EncodeAddress()
+	// transaction.DestinationAddress = destinationAddress.EncodeAddress()
 	return transaction, nil
 }
 
@@ -186,7 +211,7 @@ func balanceTest() {
 	client, err := rpcclient.New(&rpcclient.ConnConfig{
 		HTTPPostMode: true,
 		DisableTLS:   true,
-		Host:         "127.0.0.1:22555",
+		Host:         "127.0.0.1:22556",
 		User:         "smartdoge",
 		Pass:         "verySmartMuchWow!",
 	}, nil)

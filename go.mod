@@ -7,6 +7,7 @@ require (
 	github.com/btcsuite/btcd v0.21.0-beta
 	github.com/btcsuite/btcrpcclient v0.0.0-20170816011411-22cf4e48bf37 // indirect
 	github.com/btcsuite/btcutil v1.0.2
+	github.com/coinbase/rosetta-sdk-go v0.6.5
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/rosetta-dogecoin/rosetta-dogecoin v0.0.0-20210605023410-410a110f2007
 	github.com/spf13/cobra v1.1.3
