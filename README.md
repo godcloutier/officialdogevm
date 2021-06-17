@@ -1,3 +1,8 @@
+# CLARIFICATIONS
+
+This project is at the proof of concept stage. No Dogecoin core developers are currently involved in it. Only the devs mentioned below are.
+
+
 # Smart contracts for doge 
 
 - Lead devs: 
