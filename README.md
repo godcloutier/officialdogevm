@@ -22,7 +22,7 @@ We are currently working on a Proof of Concept which will include:
 
 # Smart Doge Concept
 
-## What are Smart Contracts on Doge
+# What are Smart Contracts on Doge
 
 ## Smart Contracts Definition (general)
 
@@ -32,7 +32,9 @@ We are currently working on a Proof of Concept which will include:
 
 source: [Harvard Law School Forum on Corporate Governance](https://corpgov.law.harvard.edu/2018/05/26/an-introduction-to-smart-contracts-and-their-potential-and-inherent-limitations/ "Smart Contract Definition")
 
-### Why not use an existing Smart Contract Platform like Ethereum (EVM)
+
+
+## Why not use an existing Smart Contract Platform like Ethereum (EVM)
 
 Ethereum did pioneer smart contracts on the blockchain and did develop a very useful and amazing language: solidity. Without them a lot of the blockchain space would not be the same today. 
 
@@ -45,7 +47,7 @@ Here are some of the reasons why we decided to develop Smart Doge as an integrat
 - We want to be able to speed up development without going trough lengthy debates and political issues linked to already established project, that could slow down innovation, adoption and reduce doge competitive advantage.
 
 
-### The Smart Doge Protocol 
+## The Smart Doge Protocol 
 
 This is a protocol proposal and should not be taken as the final version of it. It is a work in progress and we will add to it as it goes:
 
@@ -60,7 +62,24 @@ PROTOCOL VERSIONS: <BR><BR>
 0x0c = GO TO EMOJIS VM (parse and execute contract code) <BR>
 
 
+## Smart Doge Language Specifications
 
+The Smart Doge contract language will be : 
+<BR><BR>    
+BASED ON EMOJIS !!!
+<BR><BR>
+Why ? 
+    An emoji is very small and once map can mean anything. This will allow the contracts to have a very small footprint on the chain itself, be more secure and fun in the dogecoin meme spirit ! :)
+    
+<BR><BR>
+    
+Will I have to learn to code in EMOJIS ??? <BR><BR>
+    
+OF COURSE NOT! That would be almost impossible. The emojis if used in a smart contract context will be the contract code compiled by the compiler basically. You can view it as some kind of Compression Algorithm (like zip, rar, tar, etc) that uses emojis to store the data on the chain. Then it uncompress it and based on the context given will parse it and execute it. 
+
+    
+[MORE INFORMATIONS WILL COME SOON AS WE DEVELOP THE PROOF OF CONCEPT]    
+    
 
 # ABOUT GAS FEES (OR THE ABSENCE OF IT)
 
@@ -75,18 +94,27 @@ Code need to be always safe and tested for security flaws.
 
 
 
-
+# DISCORD CHAT ROOM
+    
+[join our discord channel to talk with us, help or get the latest news about smart doge](https://discord.gg/g5NmArGV)
 
 
 
 # CONTRIBUTIONS
 
-If you would like to help the developers on this project by tipping them collectively you can send doges to the following wallet:
+If you would like to help the developers on this project by tipping them collectively you can send DOGE to the following wallet:
 ### DTdbhgEE1drrigu7BTWrdh5dJErhod5bFc
 
 All doges received to this wallet will be distributed equally between the contributors of this project and will serve as a motivational purpose, and allow them to put more time on the projects as they can free themselves of their usual daily duties.
 
 For more information, contact HellAddict69 on or Katzenmalen twitter (@helladdict69)
+    
+
+# INDIVIDUAL CONTRIBUTIONS WALLETS
+    
+@helladdict69 D9gkeyq5QzhzkyT9wWX6XNtvh6bD9mZjSK
+@katzenmallen (ask him directly until listed here... soon)
+
 
 
 
