@@ -6,9 +6,9 @@ This project is at the proof of concept stage. No Dogecoin core developers are c
 # Smart contracts for doge 
 
 - Lead devs: 
-    Nicolas Cloutier (@helladdict69 (twitter) Github: godcloutier), 
+    Nick "Papa Doge" (@helladdict69 (twitter) Github: godcloutier), 
     
-    Finn (Github: fmhc)
+    Finn (Github: fmhc, twitter: katzenmalen)
     
 - Security expert auditor: @dogeconomy
 - There will be a section dedicated to all the devs who will participate in this project with their wallet address.
@@ -113,7 +113,7 @@ If you would like to help the developers on this project by tipping them collect
 
 All doges received to this wallet will be distributed equally between the contributors of this project and will serve as a motivational purpose, and allow them to put more time on the projects as they can free themselves of their usual daily duties.
 
-For more information, contact HellAddict69 on or Katzenmalen twitter (@helladdict69)
+For more information, contact HellAddict69 on or katzenmalen twitter (@helladdict69)
     
 
 # INDIVIDUAL CONTRIBUTIONS WALLETS
