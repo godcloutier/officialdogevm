@@ -75,7 +75,8 @@ Why ?
     
 Will I have to learn to code in EMOJIS ??? <BR><BR>
     
-    **OF COURSE NOT!** That would be almost impossible. The emojis if used in a smart contract context will be the contract code compiled by the compiler basically. You can view it as some kind of Compression Algorithm (like zip, rar, tar, etc) that uses emojis to store the data on the chain. Then it uncompress it and based on the context given will parse it and execute it. 
+**OF COURSE NOT!** 
+That would be almost impossible. The emojis if used in a smart contract context will be the contract code compiled by the compiler basically. You can view it as some kind of Compression Algorithm (like zip, rar, tar, etc) that uses emojis to store the data on the chain. Then it uncompress it and based on the context given will parse it and execute it. 
 
     
 [MORE INFORMATIONS WILL COME SOON AS WE DEVELOP THE PROOF OF CONCEPT]    
