@@ -1,17 +1,25 @@
 #ifndef SMARTDOGE_SMARTDOGE_H
 #define SMARTDOGE_SMARTDOGE_H
 
+/*
+ * Including generated flatbuffers files
+ */
+#include "smartdoge.grpc.fb.h"
+#include "smartdoge_generated.h"
+#include <grpcpp/impl/grpc_library.h>
+
 #include <iostream>
-#include <boost/asio.hpp>
-using boost::asio::ip::tcp;
+#include <memory>
+#include <string>
+
+
+
 
 class CSmartDoge
 {
 public:
 
-    static const int32_t Version_Protocol_No_Routing = 0x0a;
-    static const int32_t Version_Protocol_RouteNext4Bytes = 0x0b;
-    static const int32_t Version_Protocol_EmojisVM = 0x0c;
+
 
     CSmartDoge() = default;
 

@@ -4,7 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/nicolascloutier/Documents/GitHub/officialdogevm/Serializer.cpp" "/Users/nicolascloutier/Documents/GitHub/officialdogevm/cmake-build-debug/CMakeFiles/smartdoge.dir/Serializer.cpp.o"
   "/Users/nicolascloutier/Documents/GitHub/officialdogevm/WireMessage.cpp" "/Users/nicolascloutier/Documents/GitHub/officialdogevm/cmake-build-debug/CMakeFiles/smartdoge.dir/WireMessage.cpp.o"
   "/Users/nicolascloutier/Documents/GitHub/officialdogevm/smartdoge.cpp" "/Users/nicolascloutier/Documents/GitHub/officialdogevm/cmake-build-debug/CMakeFiles/smartdoge.dir/smartdoge.cpp.o"
   )

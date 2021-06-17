@@ -1,0 +1,90 @@
+// SmartDoge IDL file for flatbuffers schema
+
+namespace SmartDoge;
+
+enum VersionByte:byte { Default = 0, Segwit = 1, SD = 0xa }
+
+enum ProtocolVersionByte:byte { Default = 0, NoRoute = 0x0a, RouteTo = 0x0b, UseVM = 0x0c }
+
+table RawProtocol {
+
+    version:VersionByte;
+    protocol_version: ProtocolVersionByte;
+    optional_routing: [ubyte];
+    hex_opcodes: [ubyte];
+    asm_opcodes: [ubyte];
+    nonce: uint32;
+    byte_size: uint32;
+    data: [ubyte];
+    signature: [ubyte];
+
+}
+
+table IpfsData {
+    key: [ubyte];
+    enc_type: string;
+    data_type: string;
+    locked: bool;
+    recipient: [ubyte];
+    owner: [ubyte];
+    file_size: uint32;
+    enc_data: [ubyte];
+    checksum:[ubyte];
+}
+
+table FileKey {
+    v:[ubyte];
+    ek:[ubyte];
+}
+
+table StoreResponse {
+    err: [ubyte];
+    code: uint32;
+    file_key: [ubyte];
+}
+
+table RetrieveResponse {
+       err: [ubyte];
+        code: uint32;
+        file_key: [ubyte];
+        filedata: [ubyte];
+}
+
+table ContractRawData {
+    emoji_set: [ubyte];
+    context: [ubyte];
+    owner_address: [ubyte];
+    raw_data: [ubyte];
+}
+
+table StoreContractResponse {
+    err: [ubyte];
+    code: uint32;
+    result: [ubyte];
+    emoji_string: string;
+    tx_hash: [ubyte];
+}
+
+table ContractRequestResponse {
+    err: [ubyte];
+    code: uint32;
+    result: [ubyte];
+}
+
+table ContractRequest {
+    from_address: [ubyte];
+    contract_address: [ubyte];
+}
+
+rpc_service IpfsStorage {
+    Store(IpfsData): StoreResponse;
+    Retrieve(FileKey): RetrieveResponse;
+}
+
+rpc_service StoreContract {
+    CompileAndStore(ContractRawData): StoreContractResponse;
+    Retrieve(ContractRequest): ContractRequestResponse;
+
+}
+
+root_type RawProtocol;

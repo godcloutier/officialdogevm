@@ -143,33 +143,6 @@ smartdoge/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartdoge.dir/build.make CMakeFiles/smartdoge.dir/build
 .PHONY : smartdoge/fast
 
-Serializer.o: Serializer.cpp.o
-
-.PHONY : Serializer.o
-
-# target to build an object file
-Serializer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartdoge.dir/build.make CMakeFiles/smartdoge.dir/Serializer.cpp.o
-.PHONY : Serializer.cpp.o
-
-Serializer.i: Serializer.cpp.i
-
-.PHONY : Serializer.i
-
-# target to preprocess a source file
-Serializer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartdoge.dir/build.make CMakeFiles/smartdoge.dir/Serializer.cpp.i
-.PHONY : Serializer.cpp.i
-
-Serializer.s: Serializer.cpp.s
-
-.PHONY : Serializer.s
-
-# target to generate assembly for a file
-Serializer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartdoge.dir/build.make CMakeFiles/smartdoge.dir/Serializer.cpp.s
-.PHONY : Serializer.cpp.s
-
 WireMessage.o: WireMessage.cpp.o
 
 .PHONY : WireMessage.o
@@ -233,9 +206,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... smartdoge"
-	@echo "... Serializer.o"
-	@echo "... Serializer.i"
-	@echo "... Serializer.s"
 	@echo "... WireMessage.o"
 	@echo "... WireMessage.i"
 	@echo "... WireMessage.s"

@@ -83,12 +83,6 @@
 		<Unit filename="/Users/nicolascloutier/Documents/GitHub/officialdogevm/Bytes.h">
 			<Option target="smartdoge"/>
 		</Unit>
-		<Unit filename="/Users/nicolascloutier/Documents/GitHub/officialdogevm/Serializer.cpp">
-			<Option target="smartdoge"/>
-		</Unit>
-		<Unit filename="/Users/nicolascloutier/Documents/GitHub/officialdogevm/Serializer.h">
-			<Option target="smartdoge"/>
-		</Unit>
 		<Unit filename="/Users/nicolascloutier/Documents/GitHub/officialdogevm/WireMessage.cpp">
 			<Option target="smartdoge"/>
 		</Unit>
