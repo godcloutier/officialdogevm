@@ -4,8 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/nicolascloutier/CLionProjects/smartdoge/WireMessage.cpp" "/Users/nicolascloutier/CLionProjects/smartdoge/cmake-build-debug/CMakeFiles/smartdoge.dir/WireMessage.cpp.o"
-  "/Users/nicolascloutier/CLionProjects/smartdoge/smartdoge.cpp" "/Users/nicolascloutier/CLionProjects/smartdoge/cmake-build-debug/CMakeFiles/smartdoge.dir/smartdoge.cpp.o"
+  "/Users/nicolascloutier/Documents/GitHub/officialdogevm/Serializer.cpp" "/Users/nicolascloutier/Documents/GitHub/officialdogevm/cmake-build-debug/CMakeFiles/smartdoge.dir/Serializer.cpp.o"
+  "/Users/nicolascloutier/Documents/GitHub/officialdogevm/WireMessage.cpp" "/Users/nicolascloutier/Documents/GitHub/officialdogevm/cmake-build-debug/CMakeFiles/smartdoge.dir/WireMessage.cpp.o"
+  "/Users/nicolascloutier/Documents/GitHub/officialdogevm/smartdoge.cpp" "/Users/nicolascloutier/Documents/GitHub/officialdogevm/cmake-build-debug/CMakeFiles/smartdoge.dir/smartdoge.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
@@ -16,6 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/local/include"
   )
 
 # Targets to which this target links.

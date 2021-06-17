@@ -6,5 +6,5 @@ CXX_FLAGS = -g -isysroot /Applications/Xcode-beta.app/Contents/Developer/Platfor
 
 CXX_DEFINES = -Dsmartdoge_EXPORTS
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/usr/local/include 
 

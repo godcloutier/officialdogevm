@@ -2,6 +2,8 @@
 #define SMARTDOGE_SMARTDOGE_H
 
 #include <iostream>
+#include <boost/asio.hpp>
+using boost::asio::ip::tcp;
 
 class CSmartDoge
 {
@@ -13,8 +15,7 @@ public:
 
     CSmartDoge() = default;
 
-    void Serialize(int32_t Version_Protocol, int32_t OptionalVMRouting, char nData, char nChksum);
-    void Unserialize(char serializedData);
+
     void EmojiParser(char emoji);
     void MapContextToEmojis(char context, char emoji);
     void ContractSigner();
