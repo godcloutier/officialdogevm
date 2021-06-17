@@ -66,6 +66,9 @@ PROTOCOL VERSIONS: <BR><BR>
 0x0b = ROUTE WITH INFORMATION FOUND IN THE NEXT 4 BYTES <BR>
 0x0c = GO TO EMOJIS VM (parse and execute contract code) <BR>
 
+<BR>
+The communication protocol will more than likely use google fastbuffers to ensure fast communication between the client and server and secure exchange of data. 
+    <BR><BR>
 
 ## Smart Doge Language Specifications
 
