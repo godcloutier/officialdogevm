@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/nicolascloutier/CLionProjects/smartdoge/WireMessage.cpp
+WireMessage.h
+/Users/nicolascloutier/CLionProjects/smartdoge/WireMessage.h
+
+/Users/nicolascloutier/CLionProjects/smartdoge/WireMessage.h
+
+/Users/nicolascloutier/CLionProjects/smartdoge/smartdoge.cpp
+smartdoge.h
+/Users/nicolascloutier/CLionProjects/smartdoge/smartdoge.h
+iostream
+-
+
+/Users/nicolascloutier/CLionProjects/smartdoge/smartdoge.h
+iostream
+-
+
