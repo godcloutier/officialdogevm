@@ -52,7 +52,7 @@ This is a protocol proposal and should not be taken as the final version of it. 
 
 | 1 BYTE (reg chksum) | 1 BYTE (protocol version | 4 BYTE (optional vm routing) | ~ 506 BYTE (Contract data) |
 
-REG CHKSUM : 00 = regular tx, 01 = segwit, 0a = Smart Doge <BR>
+REG CHKSUM : 00 = regular tx, 01 = segwit, 0a = Smart Doge <BR><BR><BR>
 PROTOCOL VERSIONS: <BR><BR>
 
 0x0a = NO ROUTING <BR>
