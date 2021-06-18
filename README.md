@@ -1,20 +1,19 @@
 # CLARIFICATIONS
 
 This project is at the proof of concept stage. No Dogecoin core developers are currently involved in it. Only the devs mentioned below are.
-
+Our goal is to have a dogecoin-core compatible smart contract development project which we can integrate in the next steps of the dogecoin-core development after / with the v1.21 upgrades.
+We will propose a protocol layer standard which can run within the current limitations of the dogecoin chain, and then integrate it in different solutions as we want to build smart contract functionality ontop.
 
 # Smart contracts for doge 
 
 - Lead devs: 
-    Nick "Papa Doge" (@helladdict69 (twitter) Github: godcloutier), 
-    
-    Finn (Github: fmhc, twitter: katzenmalen)
+    Nick "Papa Doge" (@helladdict69 (twitter) Github: godcloutier),     
+    Finn "Katzenmalen" (@katzenmalen (twitter) Github: fmhc)
     
 - Security expert auditor: @dogeconomy
 - There will be a section dedicated to all the devs who will participate in this project with their wallet address.
 
 - Language: Backend (C++), Frontend / Smart Doge Wallet (Typescript / GoLang) 
-
 
 # State of development (June 17th 2021)
 
@@ -92,7 +91,9 @@ That would be almost impossible. The emojis if used in a smart contract context 
 
 # ABOUT GAS FEES (OR THE ABSENCE OF IT)
 
-NONE (AS IN NO GAS FEE THE CONCEPT IS NON EXISTENT)
+No additional gas fees for using smartdoge protocol. 
+
+The standard transaction fee is applied (currently 1 DOGE), which will be lowered soon by the upcoming v1.14 upgrade of dogecoin-core.
 
 
 # ETHICS
@@ -116,13 +117,13 @@ If you would like to help the developers on this project by tipping them collect
 
 All doges received to this wallet will be distributed equally between the contributors of this project and will serve as a motivational purpose, and allow them to put more time on the projects as they can free themselves of their usual daily duties.
 
-For more information, contact HellAddict69 on or katzenmalen twitter (@helladdict69)
+For more information, contact @HellAddict69 or @katzenmalen on twitter
     
 
 # INDIVIDUAL CONTRIBUTIONS WALLETS
     
 @helladdict69 D9gkeyq5QzhzkyT9wWX6XNtvh6bD9mZjSK<BR><BR>
-@katzenmallen (ask him directly until listed here... soon)<BR><BR>
+@katzenmalen D6CTaQskt9JjdXj6nHJ6VvbhXHYJkK4Qcz<BR><BR>
 
 
 
