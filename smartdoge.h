@@ -14,25 +14,29 @@
 
 
 
+namespace SmartDoge {
+    namespace root {
 
-class CSmartDoge
-{
-public:
-
-
-
-    CSmartDoge() = default;
-
-
-    void EmojiParser(char emoji);
-    void MapContextToEmojis(char context, char emoji);
-    void ContractSigner();
-    void VerifyContractSignature();
+        class CSmartDoge
+        {
+        public:
 
 
 
+            CSmartDoge() = default;
 
-};
+
+            void EmojiParser(char emoji);
+            void MapContextToEmojis(char context, char emoji);
+
+
+
+
+
+        };
+    }
+}
+
 
 
 #endif //SMARTDOGE_SMARTDOGE_H

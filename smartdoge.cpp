@@ -3,19 +3,12 @@
 #include <iostream>
 
 
-void CSmartDoge::VerifyContractSignature() {
+
+void SmartDoge::root::CSmartDoge::EmojiParser(char emoji) {
 
 }
 
-void CSmartDoge::ContractSigner() {
-
-}
-
-void CSmartDoge::EmojiParser(char emoji) {
-
-}
-
-void CSmartDoge::MapContextToEmojis(char context, char emoji) {
+void SmartDoge::root::CSmartDoge::MapContextToEmojis(char context, char emoji) {
 
 }
 

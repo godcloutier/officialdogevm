@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/smartdoge.dir/WireMessage.cpp.o"
+  "CMakeFiles/smartdoge.dir/common/sha256.cpp.o"
+  "CMakeFiles/smartdoge.dir/common/sha512.cpp.o"
+  "CMakeFiles/smartdoge.dir/entrypoint.cpp.o"
   "CMakeFiles/smartdoge.dir/smartdoge.cpp.o"
   "libsmartdoge.dylib"
   "libsmartdoge.pdb"

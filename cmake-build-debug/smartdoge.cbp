@@ -83,10 +83,28 @@
 		<Unit filename="/Users/nicolascloutier/Documents/GitHub/officialdogevm/Bytes.h">
 			<Option target="smartdoge"/>
 		</Unit>
-		<Unit filename="/Users/nicolascloutier/Documents/GitHub/officialdogevm/WireMessage.cpp">
+		<Unit filename="/Users/nicolascloutier/Documents/GitHub/officialdogevm/common/sha256.cpp">
 			<Option target="smartdoge"/>
 		</Unit>
-		<Unit filename="/Users/nicolascloutier/Documents/GitHub/officialdogevm/WireMessage.h">
+		<Unit filename="/Users/nicolascloutier/Documents/GitHub/officialdogevm/common/sha256.h">
+			<Option target="smartdoge"/>
+		</Unit>
+		<Unit filename="/Users/nicolascloutier/Documents/GitHub/officialdogevm/common/sha512.cpp">
+			<Option target="smartdoge"/>
+		</Unit>
+		<Unit filename="/Users/nicolascloutier/Documents/GitHub/officialdogevm/common/sha512.h">
+			<Option target="smartdoge"/>
+		</Unit>
+		<Unit filename="/Users/nicolascloutier/Documents/GitHub/officialdogevm/common/uint256_t.h">
+			<Option target="smartdoge"/>
+		</Unit>
+		<Unit filename="/Users/nicolascloutier/Documents/GitHub/officialdogevm/constants.h">
+			<Option target="smartdoge"/>
+		</Unit>
+		<Unit filename="/Users/nicolascloutier/Documents/GitHub/officialdogevm/entrypoint.cpp">
+			<Option target="smartdoge"/>
+		</Unit>
+		<Unit filename="/Users/nicolascloutier/Documents/GitHub/officialdogevm/entrypoint.h">
 			<Option target="smartdoge"/>
 		</Unit>
 		<Unit filename="/Users/nicolascloutier/Documents/GitHub/officialdogevm/smartdoge.cpp">

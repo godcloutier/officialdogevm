@@ -63,10 +63,10 @@ RM = "/Users/nicolascloutier/Library/Application Support/JetBrains/Toolbox/apps/
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/nicolascloutier/CLionProjects/smartdoge
+CMAKE_SOURCE_DIR = /Users/nicolascloutier/Documents/GitHub/officialdogevm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/nicolascloutier/CLionProjects/smartdoge/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/nicolascloutier/Documents/GitHub/officialdogevm/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/smartdoge.dir/depend.make
@@ -79,43 +79,73 @@ include CMakeFiles/smartdoge.dir/flags.make
 
 CMakeFiles/smartdoge.dir/smartdoge.cpp.o: CMakeFiles/smartdoge.dir/flags.make
 CMakeFiles/smartdoge.dir/smartdoge.cpp.o: ../smartdoge.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nicolascloutier/CLionProjects/smartdoge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/smartdoge.dir/smartdoge.cpp.o"
-	/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/smartdoge.dir/smartdoge.cpp.o -c /Users/nicolascloutier/CLionProjects/smartdoge/smartdoge.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nicolascloutier/Documents/GitHub/officialdogevm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/smartdoge.dir/smartdoge.cpp.o"
+	/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/smartdoge.dir/smartdoge.cpp.o -c /Users/nicolascloutier/Documents/GitHub/officialdogevm/smartdoge.cpp
 
 CMakeFiles/smartdoge.dir/smartdoge.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/smartdoge.dir/smartdoge.cpp.i"
-	/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nicolascloutier/CLionProjects/smartdoge/smartdoge.cpp > CMakeFiles/smartdoge.dir/smartdoge.cpp.i
+	/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nicolascloutier/Documents/GitHub/officialdogevm/smartdoge.cpp > CMakeFiles/smartdoge.dir/smartdoge.cpp.i
 
 CMakeFiles/smartdoge.dir/smartdoge.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/smartdoge.dir/smartdoge.cpp.s"
-	/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nicolascloutier/CLionProjects/smartdoge/smartdoge.cpp -o CMakeFiles/smartdoge.dir/smartdoge.cpp.s
+	/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nicolascloutier/Documents/GitHub/officialdogevm/smartdoge.cpp -o CMakeFiles/smartdoge.dir/smartdoge.cpp.s
 
-CMakeFiles/smartdoge.dir/WireMessage.cpp.o: CMakeFiles/smartdoge.dir/flags.make
-CMakeFiles/smartdoge.dir/WireMessage.cpp.o: ../WireMessage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nicolascloutier/CLionProjects/smartdoge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/smartdoge.dir/WireMessage.cpp.o"
-	/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/smartdoge.dir/WireMessage.cpp.o -c /Users/nicolascloutier/CLionProjects/smartdoge/WireMessage.cpp
+CMakeFiles/smartdoge.dir/common/sha256.cpp.o: CMakeFiles/smartdoge.dir/flags.make
+CMakeFiles/smartdoge.dir/common/sha256.cpp.o: ../common/sha256.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nicolascloutier/Documents/GitHub/officialdogevm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/smartdoge.dir/common/sha256.cpp.o"
+	/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/smartdoge.dir/common/sha256.cpp.o -c /Users/nicolascloutier/Documents/GitHub/officialdogevm/common/sha256.cpp
 
-CMakeFiles/smartdoge.dir/WireMessage.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/smartdoge.dir/WireMessage.cpp.i"
-	/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nicolascloutier/CLionProjects/smartdoge/WireMessage.cpp > CMakeFiles/smartdoge.dir/WireMessage.cpp.i
+CMakeFiles/smartdoge.dir/common/sha256.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/smartdoge.dir/common/sha256.cpp.i"
+	/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nicolascloutier/Documents/GitHub/officialdogevm/common/sha256.cpp > CMakeFiles/smartdoge.dir/common/sha256.cpp.i
 
-CMakeFiles/smartdoge.dir/WireMessage.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/smartdoge.dir/WireMessage.cpp.s"
-	/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nicolascloutier/CLionProjects/smartdoge/WireMessage.cpp -o CMakeFiles/smartdoge.dir/WireMessage.cpp.s
+CMakeFiles/smartdoge.dir/common/sha256.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/smartdoge.dir/common/sha256.cpp.s"
+	/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nicolascloutier/Documents/GitHub/officialdogevm/common/sha256.cpp -o CMakeFiles/smartdoge.dir/common/sha256.cpp.s
+
+CMakeFiles/smartdoge.dir/common/sha512.cpp.o: CMakeFiles/smartdoge.dir/flags.make
+CMakeFiles/smartdoge.dir/common/sha512.cpp.o: ../common/sha512.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nicolascloutier/Documents/GitHub/officialdogevm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/smartdoge.dir/common/sha512.cpp.o"
+	/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/smartdoge.dir/common/sha512.cpp.o -c /Users/nicolascloutier/Documents/GitHub/officialdogevm/common/sha512.cpp
+
+CMakeFiles/smartdoge.dir/common/sha512.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/smartdoge.dir/common/sha512.cpp.i"
+	/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nicolascloutier/Documents/GitHub/officialdogevm/common/sha512.cpp > CMakeFiles/smartdoge.dir/common/sha512.cpp.i
+
+CMakeFiles/smartdoge.dir/common/sha512.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/smartdoge.dir/common/sha512.cpp.s"
+	/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nicolascloutier/Documents/GitHub/officialdogevm/common/sha512.cpp -o CMakeFiles/smartdoge.dir/common/sha512.cpp.s
+
+CMakeFiles/smartdoge.dir/entrypoint.cpp.o: CMakeFiles/smartdoge.dir/flags.make
+CMakeFiles/smartdoge.dir/entrypoint.cpp.o: ../entrypoint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nicolascloutier/Documents/GitHub/officialdogevm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/smartdoge.dir/entrypoint.cpp.o"
+	/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/smartdoge.dir/entrypoint.cpp.o -c /Users/nicolascloutier/Documents/GitHub/officialdogevm/entrypoint.cpp
+
+CMakeFiles/smartdoge.dir/entrypoint.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/smartdoge.dir/entrypoint.cpp.i"
+	/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nicolascloutier/Documents/GitHub/officialdogevm/entrypoint.cpp > CMakeFiles/smartdoge.dir/entrypoint.cpp.i
+
+CMakeFiles/smartdoge.dir/entrypoint.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/smartdoge.dir/entrypoint.cpp.s"
+	/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nicolascloutier/Documents/GitHub/officialdogevm/entrypoint.cpp -o CMakeFiles/smartdoge.dir/entrypoint.cpp.s
 
 # Object files for target smartdoge
 smartdoge_OBJECTS = \
 "CMakeFiles/smartdoge.dir/smartdoge.cpp.o" \
-"CMakeFiles/smartdoge.dir/WireMessage.cpp.o"
+"CMakeFiles/smartdoge.dir/common/sha256.cpp.o" \
+"CMakeFiles/smartdoge.dir/common/sha512.cpp.o" \
+"CMakeFiles/smartdoge.dir/entrypoint.cpp.o"
 
 # External object files for target smartdoge
 smartdoge_EXTERNAL_OBJECTS =
 
 libsmartdoge.dylib: CMakeFiles/smartdoge.dir/smartdoge.cpp.o
-libsmartdoge.dylib: CMakeFiles/smartdoge.dir/WireMessage.cpp.o
+libsmartdoge.dylib: CMakeFiles/smartdoge.dir/common/sha256.cpp.o
+libsmartdoge.dylib: CMakeFiles/smartdoge.dir/common/sha512.cpp.o
+libsmartdoge.dylib: CMakeFiles/smartdoge.dir/entrypoint.cpp.o
 libsmartdoge.dylib: CMakeFiles/smartdoge.dir/build.make
 libsmartdoge.dylib: CMakeFiles/smartdoge.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nicolascloutier/CLionProjects/smartdoge/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libsmartdoge.dylib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nicolascloutier/Documents/GitHub/officialdogevm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libsmartdoge.dylib"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/smartdoge.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -128,6 +158,6 @@ CMakeFiles/smartdoge.dir/clean:
 .PHONY : CMakeFiles/smartdoge.dir/clean
 
 CMakeFiles/smartdoge.dir/depend:
-	cd /Users/nicolascloutier/CLionProjects/smartdoge/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/nicolascloutier/CLionProjects/smartdoge /Users/nicolascloutier/CLionProjects/smartdoge /Users/nicolascloutier/CLionProjects/smartdoge/cmake-build-debug /Users/nicolascloutier/CLionProjects/smartdoge/cmake-build-debug /Users/nicolascloutier/CLionProjects/smartdoge/cmake-build-debug/CMakeFiles/smartdoge.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/nicolascloutier/Documents/GitHub/officialdogevm/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/nicolascloutier/Documents/GitHub/officialdogevm /Users/nicolascloutier/Documents/GitHub/officialdogevm /Users/nicolascloutier/Documents/GitHub/officialdogevm/cmake-build-debug /Users/nicolascloutier/Documents/GitHub/officialdogevm/cmake-build-debug /Users/nicolascloutier/Documents/GitHub/officialdogevm/cmake-build-debug/CMakeFiles/smartdoge.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/smartdoge.dir/depend
 

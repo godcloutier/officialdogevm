@@ -143,32 +143,86 @@ smartdoge/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartdoge.dir/build.make CMakeFiles/smartdoge.dir/build
 .PHONY : smartdoge/fast
 
-WireMessage.o: WireMessage.cpp.o
+common/sha256.o: common/sha256.cpp.o
 
-.PHONY : WireMessage.o
+.PHONY : common/sha256.o
 
 # target to build an object file
-WireMessage.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartdoge.dir/build.make CMakeFiles/smartdoge.dir/WireMessage.cpp.o
-.PHONY : WireMessage.cpp.o
+common/sha256.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartdoge.dir/build.make CMakeFiles/smartdoge.dir/common/sha256.cpp.o
+.PHONY : common/sha256.cpp.o
 
-WireMessage.i: WireMessage.cpp.i
+common/sha256.i: common/sha256.cpp.i
 
-.PHONY : WireMessage.i
+.PHONY : common/sha256.i
 
 # target to preprocess a source file
-WireMessage.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartdoge.dir/build.make CMakeFiles/smartdoge.dir/WireMessage.cpp.i
-.PHONY : WireMessage.cpp.i
+common/sha256.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartdoge.dir/build.make CMakeFiles/smartdoge.dir/common/sha256.cpp.i
+.PHONY : common/sha256.cpp.i
 
-WireMessage.s: WireMessage.cpp.s
+common/sha256.s: common/sha256.cpp.s
 
-.PHONY : WireMessage.s
+.PHONY : common/sha256.s
 
 # target to generate assembly for a file
-WireMessage.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartdoge.dir/build.make CMakeFiles/smartdoge.dir/WireMessage.cpp.s
-.PHONY : WireMessage.cpp.s
+common/sha256.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartdoge.dir/build.make CMakeFiles/smartdoge.dir/common/sha256.cpp.s
+.PHONY : common/sha256.cpp.s
+
+common/sha512.o: common/sha512.cpp.o
+
+.PHONY : common/sha512.o
+
+# target to build an object file
+common/sha512.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartdoge.dir/build.make CMakeFiles/smartdoge.dir/common/sha512.cpp.o
+.PHONY : common/sha512.cpp.o
+
+common/sha512.i: common/sha512.cpp.i
+
+.PHONY : common/sha512.i
+
+# target to preprocess a source file
+common/sha512.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartdoge.dir/build.make CMakeFiles/smartdoge.dir/common/sha512.cpp.i
+.PHONY : common/sha512.cpp.i
+
+common/sha512.s: common/sha512.cpp.s
+
+.PHONY : common/sha512.s
+
+# target to generate assembly for a file
+common/sha512.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartdoge.dir/build.make CMakeFiles/smartdoge.dir/common/sha512.cpp.s
+.PHONY : common/sha512.cpp.s
+
+entrypoint.o: entrypoint.cpp.o
+
+.PHONY : entrypoint.o
+
+# target to build an object file
+entrypoint.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartdoge.dir/build.make CMakeFiles/smartdoge.dir/entrypoint.cpp.o
+.PHONY : entrypoint.cpp.o
+
+entrypoint.i: entrypoint.cpp.i
+
+.PHONY : entrypoint.i
+
+# target to preprocess a source file
+entrypoint.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartdoge.dir/build.make CMakeFiles/smartdoge.dir/entrypoint.cpp.i
+.PHONY : entrypoint.cpp.i
+
+entrypoint.s: entrypoint.cpp.s
+
+.PHONY : entrypoint.s
+
+# target to generate assembly for a file
+entrypoint.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartdoge.dir/build.make CMakeFiles/smartdoge.dir/entrypoint.cpp.s
+.PHONY : entrypoint.cpp.s
 
 smartdoge.o: smartdoge.cpp.o
 
@@ -206,9 +260,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... smartdoge"
-	@echo "... WireMessage.o"
-	@echo "... WireMessage.i"
-	@echo "... WireMessage.s"
+	@echo "... common/sha256.o"
+	@echo "... common/sha256.i"
+	@echo "... common/sha256.s"
+	@echo "... common/sha512.o"
+	@echo "... common/sha512.i"
+	@echo "... common/sha512.s"
+	@echo "... entrypoint.o"
+	@echo "... entrypoint.i"
+	@echo "... entrypoint.s"
 	@echo "... smartdoge.o"
 	@echo "... smartdoge.i"
 	@echo "... smartdoge.s"

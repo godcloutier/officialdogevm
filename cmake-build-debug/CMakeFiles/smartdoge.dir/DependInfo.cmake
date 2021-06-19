@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/nicolascloutier/Documents/GitHub/officialdogevm/WireMessage.cpp" "/Users/nicolascloutier/Documents/GitHub/officialdogevm/cmake-build-debug/CMakeFiles/smartdoge.dir/WireMessage.cpp.o"
+  "/Users/nicolascloutier/Documents/GitHub/officialdogevm/common/sha256.cpp" "/Users/nicolascloutier/Documents/GitHub/officialdogevm/cmake-build-debug/CMakeFiles/smartdoge.dir/common/sha256.cpp.o"
+  "/Users/nicolascloutier/Documents/GitHub/officialdogevm/common/sha512.cpp" "/Users/nicolascloutier/Documents/GitHub/officialdogevm/cmake-build-debug/CMakeFiles/smartdoge.dir/common/sha512.cpp.o"
+  "/Users/nicolascloutier/Documents/GitHub/officialdogevm/entrypoint.cpp" "/Users/nicolascloutier/Documents/GitHub/officialdogevm/cmake-build-debug/CMakeFiles/smartdoge.dir/entrypoint.cpp.o"
   "/Users/nicolascloutier/Documents/GitHub/officialdogevm/smartdoge.cpp" "/Users/nicolascloutier/Documents/GitHub/officialdogevm/cmake-build-debug/CMakeFiles/smartdoge.dir/smartdoge.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
