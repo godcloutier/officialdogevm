@@ -64,7 +64,7 @@ PROTOCOL VERSIONS: <BR><BR>
 0x0a = smart doge instructions <BR>
 0x0b = ROUTE WITH INFORMATION FOUND IN THE NEXT 4 BYTES <BR>
 0x0c = GO TO EMOJIS VM (parse and execute contract code) <BR>
-0x0d = RESERVED - DONATION use case
+0x0d = RESERVED - DONATION use case<BR>
 0x0e = TIGER - Transaction Integrated Giphy / Emoji Return<BR>
 0x0f = RESERVED - FUNCTION use case<BR>
 
