@@ -58,12 +58,13 @@ This is a protocol proposal and should not be taken as the final version of it. 
 
 | 1 BYTE (reg chksum) | 1 BYTE (protocol version | 4 BYTE (optional vm routing) | ~ 506 BYTE (Contract data) |
 
-REG CHKSUM : 00 = regular tx, 01 = segwit, 0a = Smart Doge <BR><BR><BR>
+REG CHKSUM : 00 = regular tx, 01 = segwit, 0a = Smart Doge (when supported)<BR><BR><BR>
 PROTOCOL VERSIONS: <BR><BR>
-
-0x0a = NO ROUTING <BR>
+    
+0x0a = smart doge instructions <BR>
 0x0b = ROUTE WITH INFORMATION FOUND IN THE NEXT 4 BYTES <BR>
 0x0c = GO TO EMOJIS VM (parse and execute contract code) <BR>
+0x0e = TIGER - Transaction Integrated Giphy / Emoji Return<BR>
 
 <BR>
 The communication protocol will more than likely use google fastbuffers to ensure fast communication between the client and server and secure exchange of data. 
